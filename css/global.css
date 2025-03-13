@@ -15,7 +15,22 @@
 
 }
 body{
-    background-color: rgb(24,24,24) !important;
+    background-color:rgba(23, 21, 21, 0.941) !important;
+}
+.bg-hd{
+    background: url(../img/game_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.bg-black-50{
+    /* background: url(https://images4.alphacoders.com/208/208628.jpg); */
+    background-color:rgba(0, 0, 0, 0.813) !important;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100%;
+    height: 100%;
 }
 .text-danger-900{
     color: var(--main-color-900);}
@@ -85,7 +100,6 @@ body{
         transition: 0.2s ease-in-out;
     }
     main .movie-card{
-        height: 100vh;
         width: 100%;
     }
     .img-hover:hover img{

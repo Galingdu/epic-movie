@@ -189,10 +189,94 @@
                         
 
                       </div>
+
+
+                      <!-- ------- hd ---------- -->
+                       <div class="container-fluid p-5 bg-hd">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-5 col-12 h-75 p-lg-0 p-md-5 d-flex justify-content-center align-items-center">
+                                            <img class="w-100 h-100 object-fit-cover" src="./asset/4k.png" alt="error">
+                                    </div>
+                                    <div class="col-lg-7 col-12 px-lg-5 px-2 mt-lg-0 mt-4">
+                                            <div class="px-lg-5 px-2 text-light font_eng fw-medium">
+                                                <p class="mb-4">| Our Service</p>
+                                                <h3 class="fw-bolder fs-1">Watch and Download Your</h3>
+                                                <h3 class="fw-bolder fs-1">Favourit Movie For Free.</h3>
+                                                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur animi natus neque 
+                                                itaque optio, voluptas tempore consectetur soluta omnis adipisci reprehenderit sit. Totam laborum, 
+                                                itaque optio,enderit sit. Totam laborum, 
+                                                tenetur eaque quis ullam doloremque.</p>
+                                                <div class="d-flex gap-3 align-items-center my-4">
+                                                    <div class="rounded-circle border-3 overflow-hidden text-center pt-lg-2 pt-3" style="width: 78px;height: 78px;border-style: dashed;">
+                                                        <i class="bi bi-film fs-1"></i>
+                                                    </div>
+                                                    <p class="fs-4 fw-bold">Enjoy Your Movie</p>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-center mt-5">
+                                                    <div class="rounded-circle border-3 overflow-hidden text-center pt-lg-2 pt-3" style="width: 78px;height: 78px;border-style: dashed;">
+                                                        <i class="bi bi-camera-reels-fill fs-1"></i>
+                                                    </div>
+                                                    <p class="fs-4 fw-bold">Watch Everywhere</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                       </div>
+
+                       <div class="container-fluid">
+                            <div class="container py-5">
+                                <div class="text-center">
+                                    <h4 class="text-danger-500 fw-bold">Online Streaming</h4>
+                                    <h2 class="text-light fw-bold">Top Related Movies</h2>
+                                </div>
+                                <div class="my-lg-5 mb-lg-0 mb-4">
+                                    <i class="bi bi-arrow-right d-block d-lg-none fs-2 text-light text-end p-0 m-0 mb-2"></i>
+                                    <div class="col-12 d-flex p-lg-0 px-2 flex-nowrap gap-lg-5 gap-4 align-items-center justify-content-start align-items-lg-center 
+                                        justify-content-lg-between overflow-scroll heng w-100" id="related">
+                                
+                                
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <h4 class="text-danger-500 fw-bold">Best TV Series</h4>
+                                    <h2 class="text-light fw-bold">World Best TV Series</h2>
+                                </div>
+                                <div class="my-lg-5 mb-lg-0 mb-4">
+                                    <i class="bi bi-arrow-right d-block d-lg-none fs-2 text-light text-end p-0 m-0 mb-2"></i>
+                                    <div class="col-12 d-flex p-lg-0 px-2 flex-nowrap gap-lg-5 gap-4 align-items-center justify-content-start align-items-lg-center 
+                                    justify-content-lg-between overflow-scroll heng w-100" id="Best_tv">
+                                
+                                
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            </div>
+                       </div>
                     </main>
 
                     <footer>
-
+                        <div class="container-fluid bg-hd">
+                            <div class="container">
+                                <div class="row py-3">
+                                    <div class="col-lg-6 text-light">
+                                        <div class="ps-lg-5 ps-1 col-12 py-lg-5 py-4">
+                                            <h3>Start first trial 30days.</h3>
+                                            <p class="text-opacity-75 fw-normal">enter your email to create or restart your membership</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 col-md-9 py-lg-5 py-0 pe-lg-5 pe-1 pb-lg-0 pb-2">
+                                        <form>
+                                            <input type="text" class="form-control rounded-2 w-100 px-4 py-lg-3 py-2 text-start shadow-none" placeholder="Enter Your E-mail">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </footer>
             </div>
 </body>
@@ -236,6 +320,8 @@
         let anime_movie = document.getElementById('anime_movie')
         let animeZ_movie = document.getElementById('animeZ_movie')
         let trending_movie = document.getElementById('trending_movie')
+        let related = document.getElementById('related')
+        let Best_tv = document.getElementById('Best_tv')
 
         anime_movie.innerHTML = ""
         anime.forEach((movie) => {
@@ -336,6 +422,104 @@
         animeZ_movie.innerHTML = ""
         animeZ.forEach((movie) => {
             animeZ_movie.innerHTML += `
+                <div class="d-none d-lg-block d-md-block" style="width: 270px;" >
+                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
+                                            ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
+                            <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2">
+                        <p class="text-light fw-medium fs-5 font_eng m-0">${movie.MovName}</p>
+                        <p class="text-light fw-medium fs-5 font_eng m-0">${movie.year}</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="m-0 text-light p-0 px-2 border-2 border border-light fw-medium opacity-75">HD</p>
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-alarm-fill text-light"></i>
+                            <p class="m-0 px-1 fw-medium text-light">${movie.hours}</p>
+                            <div class="d-flex align-items-center ms-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <p class="m-0 px-1 text-light">${movie.rate}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="d-md-none d-block d-lg-none" style="width:340px;" >
+                    <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
+                                            ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
+                            <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2">
+                        <p class="text-light fw-medium fs-lg-5 fs-6 font_eng m-0">${movie.MovName}</p>
+                        <p class="text-light fw-medium fs-lg-5 fs-6 font_eng m-0">${movie.year}</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="m-0 text-light p-0 px-2 border-2 border border-light fw-medium opacity-75">HD</p>
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-alarm-fill text-light"></i>
+                            <p class="m-0 px-1 fw-medium text-light">${movie.hours}</p>
+                            <div class="d-flex align-items-center ms-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <p class="m-0 px-1 text-light">${movie.rate}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+        });
+
+        related.innerHTML = ""
+        animeZ.forEach((movie) => {
+            related.innerHTML += `
+                <div class="d-none d-lg-block d-md-block" style="width: 270px;" >
+                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
+                                            ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
+                            <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2">
+                        <p class="text-light fw-medium fs-5 font_eng m-0">${movie.MovName}</p>
+                        <p class="text-light fw-medium fs-5 font_eng m-0">${movie.year}</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="m-0 text-light p-0 px-2 border-2 border border-light fw-medium opacity-75">HD</p>
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-alarm-fill text-light"></i>
+                            <p class="m-0 px-1 fw-medium text-light">${movie.hours}</p>
+                            <div class="d-flex align-items-center ms-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <p class="m-0 px-1 text-light">${movie.rate}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="d-md-none d-block d-lg-none" style="width:340px;" >
+                    <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
+                                            ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
+                            <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2">
+                        <p class="text-light fw-medium fs-lg-5 fs-6 font_eng m-0">${movie.MovName}</p>
+                        <p class="text-light fw-medium fs-lg-5 fs-6 font_eng m-0">${movie.year}</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="m-0 text-light p-0 px-2 border-2 border border-light fw-medium opacity-75">HD</p>
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-alarm-fill text-light"></i>
+                            <p class="m-0 px-1 fw-medium text-light">${movie.hours}</p>
+                            <div class="d-flex align-items-center ms-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <p class="m-0 px-1 text-light">${movie.rate}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+        });
+        
+
+
+        Best_tv.innerHTML = ""
+        trending.forEach((movie) => {
+            Best_tv.innerHTML += `
                 <div class="d-none d-lg-block d-md-block" style="width: 270px;" >
                     <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">

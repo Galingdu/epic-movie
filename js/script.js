@@ -27,6 +27,13 @@ let anime = [{
     hours:' ',
 },
 {
+    MovName:"Solo Leveling1",
+    year:'2025',
+    image:'anime1.jpg',
+    rate:'4.7',
+    hours:'21',
+},
+{
     MovName:"Naruto",
     year:'2025',
     image:"naruto.jpg",

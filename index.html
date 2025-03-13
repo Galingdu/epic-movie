@@ -162,20 +162,22 @@
                             <!-- -------------------------- card ------------------------------- -->
 
 
-                            <div class="d-flex p-lg-0 px-2 flex-lg-nowrap flex-wrap gap-5 align-items-lg-center justify-content-lg-between overflow-scroll heng" id="anime_movie">
+                            <div class="col-12 d-flex p-lg-0 px-2 flex-lg-nowrap flex-wrap gap-5 align-items-center justify-content-center align-items-lg-center 
+                            justify-content-lg-between overflow-scroll heng w-100" id="anime_movie">
                                 
                                 
                              </div>
                         </div>
 
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                            <div class="d-flex gap-5 align-items-center justify-content-between overflow-x-scroll heng" id="trending_movie">
+                            <div class="col-12 d-flex p-lg-0 px-2 flex-lg-nowrap flex-wrap gap-5 align-items-center justify-content-center align-items-lg-center 
+                            justify-content-lg-between overflow-scroll heng w-100" id="trending_movie">
                                
                                 
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                            <div class="d-flex p-lg-0 px-2 flex-lg-nowrap flex-wrap gap-5 align-items-lg-center justify-content-lg-between overflow-scroll heng" id="animeZ_movie">
+                            <div class="d-flex p-lg-0 px-2 flex-lg-nowrap flex-wrap gap-5 align-items-center justify-content-center align-items-lg-center justify-content-lg-between overflow-scroll heng" id="animeZ_movie">
                                
                                 
                             </div>
@@ -238,7 +240,7 @@
         anime_movie.innerHTML = ""
         anime.forEach((movie) => {
             anime_movie.innerHTML += `
-               <div class="d-none d-lg-block" style="width: 270px;" >
+               <div class="d-none d-lg-block d-md-block" style="width: 270px;" >
                     <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
@@ -260,7 +262,7 @@
                     </div>
                 </div>
 
-               <div class="d-block d-lg-none px-lg-0 px-2" style="width:100%;" >
+               <div class="d-md-none d-block d-lg-none" style="width:340px;" >
                     <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
@@ -286,7 +288,7 @@
         trending_movie.innerHTML = ""
         trending.forEach((movie) => {
             trending_movie.innerHTML += `
-                <div class="d-none d-lg-block" style="width: 270px;" >
+                <div class="d-none d-lg-block d-md-block" style="width: 270px;" >
                     <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
@@ -307,7 +309,8 @@
                         </div>
                     </div>
                 </div>
-                 <div class="d-block d-lg-none px-lg-0 px-2" style="width:340px" >
+
+               <div class="d-md-none d-block d-lg-none" style="width:340px;" >
                     <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
@@ -333,7 +336,7 @@
         animeZ_movie.innerHTML = ""
         animeZ.forEach((movie) => {
             animeZ_movie.innerHTML += `
-                <div class="d-none d-lg-block" style="width: 270px;" >
+                <div class="d-none d-lg-block d-md-block" style="width: 270px;" >
                     <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
@@ -354,7 +357,8 @@
                         </div>
                     </div>
                 </div>
-                 <div class="d-block d-lg-none px-lg-0 px-2" style="width:100%;" >
+
+               <div class="d-md-none d-block d-lg-none" style="width:340px;" >
                     <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">

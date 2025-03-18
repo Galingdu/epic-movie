@@ -104,8 +104,8 @@ body{
     }
     .img-hover:hover img{
         filter: brightness(110%) !important;
-        width:270.5px !important;
-        height:370.5px !important;
+        width:240.5px !important;
+        height:340.5px !important;
         
     }
     .heng::-webkit-scrollbar{

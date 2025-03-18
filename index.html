@@ -163,7 +163,7 @@
 
                                    <!-- -------------------------- card ------------------------------- -->
        
-                                   <div class="col-12 d-flex p-lg-0 px-2 flex-lg-nowrap flex-wrap gap-5 align-items-center justify-content-center align-items-lg-center 
+                                   <div class="col-12 d-flex p-lg-0 px-2 flex-nowrap gap-lg-5 gap-4 align-items-center justify-content-start align-items-lg-center 
                                    justify-content-lg-between overflow-scroll heng w-100" id="anime_movie">
                                        
                                        
@@ -171,7 +171,7 @@
                                </div>
        
                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                   <div class="col-12 d-flex p-lg-0 px-2 flex-lg-nowrap flex-wrap gap-5 align-items-center justify-content-center align-items-lg-center 
+                                   <div class="col-12 d-flex p-lg-0 px-2 flex-nowrap gap-lg-5 gap-4 align-items-center justify-content-start align-items-lg-center 
                                    justify-content-lg-between overflow-scroll heng w-100" id="trending_movie">
                                       
                                        
@@ -195,7 +195,7 @@
                              <!-- ------- hd ---------- -->
                               <div class="container-fluid p-5 bg-hd">
                                    <div class="container">
-                                       <div class="row" data-aos="fade-down">
+                                       <div class="row" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
                                            <div class="col-lg-5 col-12 h-75 p-lg-0 p-md-5 d-flex justify-content-center align-items-center">
                                                    <img class="w-100 h-100 object-fit-cover" src="./img/4kresu.jpg" alt="error">
                                            </div>
@@ -282,7 +282,7 @@
                                    </div>
                                </div>
                 </footer>
-                
+
            </div>  
    
 </body>
@@ -332,8 +332,8 @@
         anime_movie.innerHTML = ""
         anime.forEach((movie) => {
             anime_movie.innerHTML += `
-               <div class="d-none d-lg-block d-md-block" style="width: 270px;" data-aos="fade-up">
-                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
+               <div class="d-none d-lg-block d-md-block" style="width: 240px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 240px; height: 340px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -354,8 +354,8 @@
                     </div>
                 </div>
 
-               <div class="d-md-none d-block d-lg-none" style="width:340px;"data-aos="fade-up" >
-                    <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
+               <div class="d-md-none d-block d-lg-none" style="width:190px; "data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                    <div class="rounded-2 overflow-hidden" style="width:190px; height: 260px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -380,8 +380,8 @@
         trending_movie.innerHTML = ""
         trending.forEach((movie) => {
             trending_movie.innerHTML += `
-                <div class="d-none d-lg-block d-md-block" style="width: 270px;" data-aos="fade-up" >
-                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
+                <div class="d-none d-lg-block d-md-block" style="width: 240px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 240px; height: 340px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -402,8 +402,8 @@
                     </div>
                 </div>
 
-               <div class="d-md-none d-block d-lg-none" style="width:340px;" data-aos="fade-up">
-                    <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
+               <div class="d-md-none d-block d-lg-none" style="width:190px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                    <div class="rounded-2 overflow-hidden" style="width:190px; height: 260px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -428,8 +428,8 @@
         animeZ_movie.innerHTML = ""
         animeZ.forEach((movie) => {
             animeZ_movie.innerHTML += `
-                <div class="d-none d-lg-block d-md-block" style="width: 270px;"data-aos="fade-up" >
-                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
+                <div class="d-none d-lg-block d-md-block" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900" style="width: 240px;" >
+                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 240px; height: 340px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -450,8 +450,8 @@
                     </div>
                 </div>
 
-               <div class="d-md-none d-block d-lg-none" style="width:340px;" data-aos="fade-up">
-                    <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
+               <div class="d-md-none d-block d-lg-none" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900" style="width:290px;" >
+                    <div class="rounded-2 overflow-hidden" style="width:290px; height: 360px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -476,8 +476,8 @@
         related.innerHTML = ""
         animeZ.forEach((movie) => {
             related.innerHTML += `
-                <div class="d-none d-lg-block d-md-block" style="width: 270px;" data-aos="fade-up">
-                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
+                <div class="d-none d-lg-block d-md-block" style="width: 240px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 240px; height: 340px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -498,8 +498,8 @@
                     </div>
                 </div>
 
-               <div class="d-md-none d-block d-lg-none" style="width:340px;"data-aos="fade-up" >
-                    <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
+               <div class="d-md-none d-block d-lg-none" style="width:190px;"data-aos="fade-up" data-aos-delay="200" data-aos-duration="900" >
+                    <div class="rounded-2 overflow-hidden" style="width:190px; height: 260px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -526,8 +526,8 @@
         Best_tv.innerHTML = ""
         trending.forEach((movie) => {
             Best_tv.innerHTML += `
-                <div class="d-none d-lg-block d-md-block" style="width: 270px;"data-aos="fade-up" >
-                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 270px; height: 370px
+                <div class="d-none d-lg-block d-md-block" style="width: 240px;"data-aos="fade-up" data-aos-delay="200" data-aos-duration="900" >
+                    <div class="bg-info rounded-2 overflow-hidden img-hover" style="width: 240px; height: 340px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
@@ -548,8 +548,8 @@
                     </div>
                 </div>
 
-               <div class="d-md-none d-block d-lg-none" style="width:340px;" >
-                    <div class="rounded-2 overflow-hidden" style="width:340px; height: 410px
+               <div class="d-md-none d-block d-lg-none" style="width:190px;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                    <div class="rounded-2 overflow-hidden" style="width:190px; height: 260px
                                             ;background-color: rgba(218, 219, 220, 0.84);box-shadow: 0 4px 4px">
                             <img src="./img/${movie.image}" alt class="w-100 h-100 object-fit-cover">
                     </div>
